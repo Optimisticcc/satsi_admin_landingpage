@@ -1,0 +1,4 @@
+.MuiDataGrid-row .MuiDataGrid-cell {
+    overflow-x: auto!important;
+    text-overflow: clip!important;
+}
