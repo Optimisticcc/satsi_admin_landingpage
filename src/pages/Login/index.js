@@ -17,9 +17,9 @@ const LoginPage = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setPendding(true);
-    const inforCustomer = { Username: username, Password: password };
+    const inforCustomer = { username, password };
 
-    fetch(`${process.env.REACT_APP_API_URL_LP}/auth/login`, {
+    fetch(`${process.env.REACT_APP_API_URL_NEW}/api/admin/signin`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(inforCustomer),
@@ -34,8 +34,8 @@ const LoginPage = (props) => {
         setPendding(false);
         setUsername('');
         setPassword('');
-
-        localStorage.setItem('token', data.acesstoken);
+        console.log('data: ', data);
+        localStorage.setItem('token', data.data.token);
         const { from } = props.location.state || { from: { pathname: '/' } };
         history.push(from);
       })

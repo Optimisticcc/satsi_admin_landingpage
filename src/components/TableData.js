@@ -50,6 +50,7 @@ const TableData = ({
   }, [tableApi, currentPage, rowsPerPage]);
 
   const rows = createData(notes);
+  console.log(rows);
 
   const handleSelectionChange = (e) => {
     if (e.selectionModel.length !== 0) {

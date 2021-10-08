@@ -12,9 +12,7 @@ import {
   Tooltip,
   Typography,
 } from '@material-ui/core';
-import {
-  ExitToApp,
-} from '@material-ui/icons';
+import { ExitToApp } from '@material-ui/icons';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 import { format } from 'date-fns';
 import { useHistory, useLocation } from 'react-router';
@@ -65,25 +63,45 @@ const Layout = ({ children }) => {
   const location = useLocation();
 
   const menuItems = [
+    // {
+    //   text: 'Sơ tuyển online (Landing page)',
+    //   icon: <FormatListBulletedIcon color='secondary' />,
+    //   path: '/so-tuyen-lp',
+    // },
     {
-      text: 'Sơ tuyển online (Landing page)',
+      text: 'Sơ tuyển online (Hàng không)',
       icon: <FormatListBulletedIcon color='secondary' />,
-      path: '/so-tuyen-lp',
+      path: '/so-tuyen-lp2',
     },
+    // {
+    //   text: 'Đăng ký tư vấn (Landing page)',
+    //   icon: <FormatListBulletedIcon color='secondary' />,
+    //   path: '/tu-van-lp',
+    // },
     {
-      text: 'Đăng ký tư vấn (Landing page)',
+      text: 'Đăng ký tư vấn(Hàng không)',
       icon: <FormatListBulletedIcon color='secondary' />,
-      path: '/tu-van-lp',
+      path: '/tu-van-lp2',
     },
+    // {
+    //   text: 'Đăng ký chương trình (Satsi)',
+    //   icon: <FormatListBulletedIcon color='secondary' />,
+    //   path: '/dang-ky-chuong-trinh',
+    // },
     {
       text: 'Đăng ký chương trình (Satsi)',
       icon: <FormatListBulletedIcon color='secondary' />,
-      path: '/dang-ky-chuong-trinh',
+      path: '/dang-ky-chuong-trinh2',
     },
+    // {
+    //   text: 'Cộng tác viên',
+    //   icon: <FormatListBulletedIcon color='secondary' />,
+    //   path: '/ctv',
+    // },
     {
-      text: 'Cộng tác viên',
+      text: 'Cộng tác viên ',
       icon: <FormatListBulletedIcon color='secondary' />,
-      path: '/ctv',
+      path: '/ctv2',
     },
   ];
 

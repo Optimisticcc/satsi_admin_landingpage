@@ -16,7 +16,7 @@ export const PrivateRoute = ({ component: Component, ...rest }) => {
       redirect: 'follow',
     };
 
-    fetch(`${process.env.REACT_APP_API_URL_LP}/auth`, requestOptions)
+    fetch(`${process.env.REACT_APP_API_URL_NEW}/auth`, requestOptions)
       .then((response) => {
         if (!response.ok) {
           localStorage.removeItem('token');
