@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
     {
       text: 'Sơ tuyển online (Hàng không)',
       icon: <FormatListBulletedIcon color='secondary' />,
-      path: '/so-tuyen-lp2',
+      path: '/admin/so-tuyen-lp2',
     },
     // {
     //   text: 'Đăng ký tư vấn (Landing page)',
@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
     {
       text: 'Đăng ký tư vấn(Hàng không)',
       icon: <FormatListBulletedIcon color='secondary' />,
-      path: '/tu-van-lp2',
+      path: '/admin/tu-van-lp2',
     },
     // {
     //   text: 'Đăng ký chương trình (Satsi)',
@@ -91,7 +91,7 @@ const Layout = ({ children }) => {
     {
       text: 'Đăng ký chương trình (Satsi)',
       icon: <FormatListBulletedIcon color='secondary' />,
-      path: '/dang-ky-chuong-trinh2',
+      path: '/admin/dang-ky-chuong-trinh2',
     },
     // {
     //   text: 'Cộng tác viên',
@@ -101,13 +101,13 @@ const Layout = ({ children }) => {
     {
       text: 'Cộng tác viên ',
       icon: <FormatListBulletedIcon color='secondary' />,
-      path: '/ctv2',
+      path: '/admin/ctv2',
     },
   ];
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    history.push('/login');
+    window.location.reload();
   };
 
   return (
