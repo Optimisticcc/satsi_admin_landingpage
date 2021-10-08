@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
   },
   tableHead: {
     position: 'sticky',
-    top: 145,
+    top: 0,
     backgroundColor: '#fff',
     zIndex: 10,
   },

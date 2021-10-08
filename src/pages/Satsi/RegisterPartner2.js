@@ -55,7 +55,6 @@ const excelHeaders = [
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    position: 'relative',
   },
   paper: {
     width: '100%',
@@ -66,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   },
   tableHead: {
     position: 'sticky',
-    top: 145,
+    top: 0,
     backgroundColor: '#fff',
     zIndex: 10,
   },
@@ -250,7 +249,6 @@ export default function RegisterPartner2() {
             aria-labelledby='tableTitle'
             size='medium'
             aria-label='enhanced table'
-            stickyHeader
           >
             <TableHead className={classes.tableHead}>
               <TableRow>

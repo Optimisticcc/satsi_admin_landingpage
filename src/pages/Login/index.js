@@ -6,7 +6,7 @@ import './index.css';
 const LoginPage = (props) => {
   const history = useHistory();
   if (localStorage.getItem('token')) {
-    history.push('/so-tuyen-lp');
+    history.push('/so-tuyen-lp2');
   }
 
   const [username, setUsername] = useState('');
